@@ -1,6 +1,6 @@
 let express = require( 'express' );
 let app = express();
-var PORT=process.env.PORT || 5000;
+var PORT=process.env.PORT || 7000;
 let server = require( 'http' ).Server( app );
 let io = require( 'socket.io' )( server );
 let stream = require( './ws/stream' );
