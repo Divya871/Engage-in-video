@@ -1,0 +1,22 @@
+{
+  "name": "engage-in-videos",
+  "version": "1.0.0",
+  "description": "Engage-in-videos",
+  "main": "src/app.js",
+  "scripts": {
+    "start-node": "node src/app.js",
+    "start": "nodemon src/app.js",
+    "watch": "nodemon --watch \"src/\" --exec \"node src/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Divya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
