@@ -1,5 +1,6 @@
 let express = require( 'express' );
 let app = express();
+var PORT=process.env.PORT || 5000;
 let server = require( 'http' ).Server( app );
 let io = require( 'socket.io' )( server );
 let stream = require( './ws/stream' );
@@ -16,4 +17,5 @@ app.get( '/', ( req, res ) => {
 
 io.of( '/stream' ).on( 'connection', stream );
 
-server.listen( 5000 );
+server.listen( PORT,function()
+{console.log('server started');});
