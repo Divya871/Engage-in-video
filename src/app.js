@@ -17,5 +17,5 @@ app.get( '/', ( req, res ) => {
 
 io.of( '/stream' ).on( 'connection', stream );
 
-server.listen( PORT,function()
+server.listen( PORT,() =>
 {console.log('server started');});
