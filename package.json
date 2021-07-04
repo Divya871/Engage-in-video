@@ -2,9 +2,9 @@
   "name": "engage-in-videos",
   "version": "1.0.0",
   "description": "Engage-in-videos",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node app.js",
     "watch": "nodemon --watch \"src\" --exec \"node app.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
