@@ -132,7 +132,7 @@ window.addEventListener('load', () => {
       //emit chat message
       socket.emit('chat', data);
 
-      //add localchat
+      //add local chat
       helperFunctions.addChat(data, 'local');
     }
 
@@ -198,7 +198,7 @@ window.addEventListener('load', () => {
           let videoContainerWrapper = document.getElementById(
             'videos-container-wrapper'
           );
-          //video elem
+          //video element
           let newVid = document.createElement('video');
           newVid.id = `${partnerName}-video`;
           newVid.srcObject = str;
@@ -211,27 +211,9 @@ window.addEventListener('load', () => {
           videoContainer.classList = ['video-container'];
           videoContainer.appendChild(newVid);
 
-          //video controls elements
-          //   let controlDiv = document.createElement('div');
-          //   controlDiv.className = 'remote-video-controls';
-          //   controlDiv.innerHTML = `
-          //     <i class="fa fa-microphone text-white pr-3 mute-remote-mic" title="Mute"></i>
-          //     <i class="fa fa-expand text-white expand-remote-video" title="Expand"></i>
-          //     `;
-
-          //   //create a new div for card
-          //   let cardDiv = document.createElement('div');
-          //   cardDiv.className = 'card card-sm';
-          //   cardDiv.id = partnerName;
-          //   cardDiv.appendChild(newVid);
-          //   cardDiv.appendChild(controlDiv);
-
-          //put div in main-section elem
 
           videoContainerWrapper.appendChild(videoContainer);
           reorganize();
-          //   document.getElementById('videos').appendChild(cardDiv);
-
           helperFunctions.adjustVideoElemSize();
         }
       };
@@ -260,9 +242,9 @@ window.addEventListener('load', () => {
     }
 
     const videoAspectRatio =
-      16 / 9; /* SET TO WHAT YOU WANT IT TO BE FOR EACH PERSON DIV */
+      16 / 9; 
     const maxCols = 7;
-    // const screen = document.getElementById('screen');
+  
     const container = document.getElementById('videos-container-wrapper');
 
     function reorganize() {
@@ -294,7 +276,7 @@ window.addEventListener('load', () => {
       let h = 0; //will be height of the container in px
 
       if (videoContainerCount > cols * (cols - 1)) {
-        // > OK for 5 and 6 not OK for 7
+       
         h = wrapperElementHeight;
         w = h * videoAspectRatio;
       } else {
@@ -302,7 +284,6 @@ window.addEventListener('load', () => {
         h = w / videoAspectRatio;
       }
 
-      // container.style.width = w + 'px';
       document.getElementById('videoContainerStyle').innerHTML =
         '.video-container {flex: 0 0 ' +
         100 / cols +
@@ -311,8 +292,7 @@ window.addEventListener('load', () => {
         'px;}';
       if (videoContainerCount <= cols * (cols - 1)) {
         h = h - h / cols;
-      } // for when last row is empty
-      // container.style.marginTop = -h / 2 + 'px';
+      } 
     }
 
     window.addEventListener('resize', reorganize);
@@ -323,7 +303,7 @@ window.addEventListener('load', () => {
         .then((stream) => {
           helperFunctions.toggleShareIcons(true);
 
-          //disable the video toggle btns while sharing screen. This is to ensure clicking on the btn does not interfere with the screen sharing
+          //disable the video toggle buttons while sharing screen. This is to ensure clicking on the btn does not interfere with the screen sharing
           //It will be enabled was user stopped sharing screen
           helperFunctions.toggleVideoBtnDisabled(true);
 
@@ -344,7 +324,7 @@ window.addEventListener('load', () => {
     }
 
     function stopSharingScreen() {
-      //enable video toggle btn
+      //enable video toggle button
       helperFunctions.toggleVideoBtnDisabled(false);
 
       return new Promise((res, rej) => {

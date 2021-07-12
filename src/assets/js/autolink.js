@@ -1,5 +1,4 @@
-
- ( function () {
+( function () {
   var autoLink,
     slice = [].slice;
 

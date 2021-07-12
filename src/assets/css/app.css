@@ -134,97 +134,6 @@ footer {
   overflow-x: scroll;
 }
 
-/* .remote-video{
- width:100%;
- height:auto;
- max-height: 90vh;
-} */
-
-/* .remote-video-controls{
- position:absolute;
- bottom: 0;
- z-index:300000;
- padding: 10px;
- width: 100%;
- text-align: center;
- visibility: hidden;
-}
-
-.remote-video:hover + .remote-video-controls,
-.remote-video-controls:hover{
- visibility: visible;
-} */
-
-/* ______________________________ */
-/* .videos-container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    max-width: 100%;
-}
-
-.local-video,
-.remote-video {
-  height: 400px; 
-  min-width: 100px;
-  flex:auto;
-  object-fit: cover;
-  padding: 8px;
-  border-radius: 40px;
-  margin: auto;
-  overflow: hidden;
-  z-index: 1;
-  background-color: transparent;
-} */
-/* ______________________________ */
-
-/* ______________________________ */
-/* .videos-container-wrapper {
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr) [2];
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-
-.video-container{
-background-color: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-}
-
-.local-video,
-.remote-video {
-  width: 100%;
-} */
-/* ______________________________ */
-
-/* ______________________________ */
-/* .local-video,
-.remote-video {
-  height: 400px;
-  width: 500px;
-  object-fit: cover;
-  padding: 8px;
-  border-radius: 40px;
-  margin: auto;
-  overflow: hidden;
-  z-index: 1;
-  background-color: transparent;
-} */
-/* ______________________________ */
 .videos-container-wrapper {
   /* height: 100%; */
   margin: auto;
@@ -238,19 +147,10 @@ background-color: #eee;
 }
 
 .video-container {
-  /* background-color: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; */
+
   width: 100%;
   margin-bottom:10px;
-  /* text-align: center; */
+ 
 }
 
 .local-video,
